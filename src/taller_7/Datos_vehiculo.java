@@ -174,7 +174,7 @@ public class Datos_vehiculo extends Interfaz {
         porcen= Double.parseDouble(t3.getText())*0.08;
         }catch(Exception errorMain){
             t5.setText("no hay vehiculo");
-            t6.setText("no hay vehiculo");
+            t8.setText("no hay vehiculo");
         }      
         t8.setText(EliminarNotaciónCientifica(porcen));
         double porcentaj1;
@@ -188,9 +188,13 @@ public class Datos_vehiculo extends Interfaz {
         porcen1= Double.parseDouble(t3.getText())-100000;
         }catch(Exception errorMain){
             t5.setText("no hay vehiculo");
-            t6.setText("no hay vehiculo");
+            t7.setText("no hay vehiculo");
         }      
+        if (porcen1==0){
+            t7.setText("0");
+        }else{
         t7.setText("100000");
+        }
         String h=EliminarNotaciónCientifica(porcen1);
         t5.setText(h); 
         }else{t7.setText(null);}
