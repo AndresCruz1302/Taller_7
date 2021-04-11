@@ -209,7 +209,7 @@ public class Datos_vehiculo extends Interfaz {
         porcentaje= Double.parseDouble(t3.getText())-porce2;
         double por2;
         por2=porcentaje-100000;
-        t7.setText(EliminarNotaciónCientifica(por2));
+        t7.setText("100000");
         double porcent1;
         porcent1=por2*0.08;
         t8.setText(EliminarNotaciónCientifica(porcent1));
@@ -232,7 +232,7 @@ public class Datos_vehiculo extends Interfaz {
         porcentaje= Double.parseDouble(t3.getText())-porce2;
         double por2;
         por2=porcentaje-100000;
-        t7.setText(EliminarNotaciónCientifica(por2));
+        t7.setText("100000");
         String d=EliminarNotaciónCientifica(por2);
         t5.setText(d); 
         }
@@ -265,7 +265,7 @@ public class Datos_vehiculo extends Interfaz {
             t8.setText("no hay vehiculo");
             t7.setText("no hay vehiculo");
         }      
-        t7.setText(EliminarNotaciónCientifica(porce2));
+        t7.setText("100000");
         double porcent1;
         porcent1=porce2*0.08;
         t8.setText(EliminarNotaciónCientifica(porcent1));
