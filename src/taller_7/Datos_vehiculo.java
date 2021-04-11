@@ -190,7 +190,7 @@ public class Datos_vehiculo extends Interfaz {
             t5.setText("no hay vehiculo");
             t6.setText("no hay vehiculo");
         }      
-        t7.setText(EliminarNotaciónCientifica(porcen1));
+        t7.setText("100000");
         String h=EliminarNotaciónCientifica(porcen1);
         t5.setText(h); 
         }else{t7.setText(null);}
